@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body link="#555555" text="#555555" background="images/hg_grau_rechts.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script type="text/javascript">
+<!--
+	function submv(val) {
+ 		document.forms[0].Submit.value = val;
+ 		document.forms[0].submit();
+   }
+//-->
+</script>
+<table width="475" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="10"><img src="../images/dummy.gif" width="10" height="10"></td>
+    <td bgcolor="#FFFFFF" align="left" valign="top" width="465"> 
+      <table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td align="left" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="43%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Bild
+                  bearbeiten</b></font></td>
+                <td width="57%">
+                  <div align="right"><img src="images/navigation/but_hilfe.gif" width="30" height="20" onClick="MM_openBrWindow('../kontexthilfe/medien_bildbearbeitung.html','kontext','scrollbars=yes,resizable=yes,width=200,height=200')"></div>
+                </td>
+              </tr>
+            </table>
+            <form name="bill" method="post" action="{post}">
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="hidden" name="action" value="{action}">
+              <input type="hidden" name="action2" value="{action2}">
+              <input type="hidden" name="dir" value="{dir}">
+              <input type="hidden" name="file" value="{file}">
+              <input type="hidden" name="xs" value="{xs}">
+              <input type="hidden" name="xe" value="{xe}">
+              <input type="hidden" name="ys" value="{ys}">
+              <input type="hidden" name="ye" value="{ye}">
+				  <input type="hidden" name="Submit" value="">
+
+              {sessid} <br>
+              <br>
+              </font>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr align="left" valign="middle">
+                  <td > <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						Bildausschnittgr&ouml;&szlig;e w&auml;hlen:<br>
+                    (Angabe
+                      in Pixel)</font>
+                    </td>
+                  <td ><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    Breite:
+                    <input type="text" name="width" value="{width}" maxlength="4" size="6">
+                    </font></td>
+                  <td ><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Höhe:
+                    <input type="text" name="height" value="{height}" maxlength="4" size="6">
+                    </font></td>
+                </tr>
+              </table>
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> <br>
+              </font>
+<table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                    <div align="center"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+							 <a href="javascript:submv('Up')">
+							 <img border=0 src="../images/navigation/but_pfeil_nach_oben.gif">
+							</a>
+                      </font></div>
+                  </td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						  <a href="javascript:submv('Left')"><img border=0 src="../images/navigation/but_pfeil_nach_links.gif"></a>
+                    </font></td>
+                  <td width="320" height="240">
+                    <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						  <img src="{lnk_image}" align="middle"></font></div>
+                  </td>
+                  <td> 
+                    <div align="center"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						  <a href="javascript:submv('Right')"><img border=0 src="../images/navigation/but_pfeil_nach_rechts.gif"></a>
+                      </font></div>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>&nbsp;</td>
+                  <td> 
+                    <div align="center"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+							 <a href="javascript:submv('Down')"><img border=0 src="../images/navigation/but_pfeil_nach_unten.gif"></a>
+                      </font></div>
+                  </td>
+                  <td>&nbsp; </td>
+                </tr>
+              </table>
+              <br>
+              <table border="0" cellspacing="0" cellpadding="0" width="465">
+                <tr align="left" valign="middle"> 
+                  <td width="400"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						&nbsp;Schrittgr&ouml;&szlig;e f&uuml;r die Verschiebung des Bildausschnittes:<br>
+                    (Angabe in Pixel)</font></td>
+                  <td width="65"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <input type="text" name="move" maxlength="3" size="6" value="{move}">
+                    </font></td>
+                </tr>
+              </table>
+              <br>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr align="left" valign="middle">
+                  <td width="30%">
+						<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						Bildgr&ouml;&szlig;e ver&auml;ndern:
+						</font>
+						</td>
+                  <td width="18%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						<a href="javascript:submv('ZOOMIN')">
+						<img border=0 src="../images/navigation/but_groesser.gif">
+						</a>
+                    </font></td>
+                  <td width="52%">
+						<a href="javascript:submv('ZOOMOUT')">
+						<img border=0 src="../images/navigation/but_kleiner.gif">
+						</a>
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <p> 
+             
+            </form>
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="{lnk_preview}" target="_blank"><img src="images/navigation/but_vorschau.gif" width="90" height="25" border="0"></a></font> 
+            <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="{lnk_save}"><img src="images/navigation/but_speichern.gif" width="84" height="22" border="0"></a></font> 
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td height="10"><img src="images/dummy.gif" width="10" height="10"></td>
+  </tr>
+</table>
+</body>
+</html>

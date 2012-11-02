@@ -1,0 +1,72 @@
+
+<body text="#555555" link="#555555" vlink="#555555" alink="#555555">
+<form name="form1" method="post" action="{post}">
+<input type="hidden" name="id" value="{id}">
+<input type="hidden" name="action" value="el">
+<input type="hidden" name="action2" value="insert">
+<input type="hidden" name="tid" value="{tid}">
+<input type="hidden" name="elid" value="{elid}">
+<input type="hidden" name="pid" value="{pid}">
+<input type="hidden" name="language" value="{language}">
+  <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> {sessid} </font> 
+  <table border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="350">  
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td align="left" valign="top"> 
+<input type="checkbox" name="ueberschrift" value="1" {ueberschrift}>
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1">Erste 
+              Zeile ist eine Überschrift </font><br>
+              <br>
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1">Zeilen: 
+              </font> 
+              <select name="zeilen">
+                <option value="1" {z1}>1</option>
+                <option value="2" {z2}>2</option>
+                <option value="3" {z3}>3</option>
+                <option value="4" {z4}>4</option>
+                <option value="5" {z5}>5</option>
+                <option value="6" {z6}>6</option>
+                <option value="7" {z7}>7</option>
+                <option value="8" {z8}>8</option>
+                <option value="9" {z9}>9</option>
+                <option value="10" {z10}>10</option>
+              </select>
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1">Spalten: 
+              </font> 
+              <select name="spalten">
+                <option value="1" {s1}>1</option>
+                <option value="2" {s2}>2</option>
+                <option value="3" {s3}>3</option>
+                <option value="4" {s4}>4</option>
+                <option value="5" {s5}>5</option>
+                <option value="6" {s6}>6</option>
+                <option value="7" {s7}>7</option>
+                <option value="8" {s8}>8</option>
+                <option value="9" {s9}>9</option>
+                <option value="10" {s10}>10</option>
+              </select>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!-- BEGIN zeile -->
+                <tr>
+<!-- BEGIN spalte -->
+                  <td>
+                    <input type="text" name="textfeld[{fid}]" value="{vall}">
+                  </td>
+<!-- END spalte -->
+					</tr>
+<!-- END zeile -->
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      
+    </td>
+    <td valign="bottom">
+<input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22"></td>
+  </tr>
+</table>
+</form>
+

@@ -1,0 +1,124 @@
+<html>
+
+<head>
+
+<title>Untitled Document</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+
+
+<body link="#555555" text="#555555" background="images/hg_grau_rechts.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="475" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align="left" valign="top"> 
+      <table border="0" cellspacing="5" cellpadding="0" width="460">
+        <tr>
+          <td align="left" valign="top"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+                <td height="22" align="left" valign="top"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Editierbare 
+                        Objekte im Seitenbereich: <font color="#E7651A">{eplaceholder}</font><br>
+								Aktuelle Sprache: <font color="#E7651A">{language}
+                        </font></b></font>
+							 </td>
+                      <td align="right" valign="top">
+							 	<a href="javascript:;" onClick="MM_openBrWindow('../kontexthilfe/editieren_objekttypen.html','kontext','scrollbars=yes,resizable=yes,width=200,height=200')">
+							 		<img src="images/navigation/but_hilfe.gif" width="30" height="20" border="0">
+								</a>
+							</td>
+                    </tr>
+                  </table>
+                  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                  <img src="images/striche_rechts2.gif" width="455" height="10"><br>
+                  </font></td>
+              </tr>
+			  <!-- BEGIN liste -->
+              <tr> 
+                <td align="left" valign="top"> 
+                  <div align="left"> 
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#E7651A"><b>{eename}</b></font><br>
+{element}
+                    <table border="0" cellspacing="0" cellpadding="0" width="400">
+                      <tr> 
+                        <td align="left" height="20" width="23%">
+								<font face="Verdana, Arial, Helvetica, sans-serif" size="1">Objekt
+                          l&ouml;schen </font> </td>
+                        <td align="left" width="19%">
+								<a href="{lnk_delete}"><img src="images/navigation/but_loeschen.gif" width="21" height="20" border="0"></a> 
+                        <td align="left" width="29%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Objekt 
+                          verschieben</font></td>
+                        <td align="left" width="29%"><a href="{lnk_up}"><img src="images/navigation/but_nach_oben.gif" width="21" height="20" border="0"></a> 
+                          <a href="{lnk_down}><img src="images/navigation/but_nach_unten.gif" width="68" height="20" border="0"></a><a href="{lnk_down}"><img src="images/navigation/but_nach_unten.gif" width="21" height="20" border="0"></a></td>
+                      </tr>
+                    </table>
+                    
+                      <br>
+                    <img src="images/striche_rechts2.gif" width="455" height="10"><br>
+                 </div>
+                </td>
+              </tr>
+			  <!-- END liste -->
+              <tr> 
+                <td> 
+                  <table cellspacing="0" cellpadding="0" width="455">
+                    <tr> 
+                      <td valign="top"> 
+                        <form name="form1" method="post" action="{post}">
+                          <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="hidden" name="action" value="el">
+                          <input type="hidden" name="action2" value="insert">
+                          <input type="hidden" name="tid" value="{tid}">
+                          <input type="hidden" name="elid" value="{elid}">
+                          <input type="hidden" name="pid" value="{pid}">
+								  <input type="hidden" name="language" value="{languageshort}">
+                          {sessid} <b>Neues Objekt einf&uuml;gen</b>:<br>
+                          <br>
+                          <select name="etypid">
+                            <!-- BEGIN elemente -->
+                            <option value="{etypid}">{ename}</option>
+                            <!-- END elemente -->
+                          </select>
+                          <input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                          </font> 
+                        </form>
+                      </td>
+                    </tr>
+					
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+				<a href="{lnk_preview}" target="_blank"><br>
+              <img src="images/navigation/but_seitenvorschau.gif" width="90" height="25" border="0"></a><br>
+              <br>
+              </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="{back_lnk}"><img src="images/navigation/but_zurueck.gif" width="55" height="20" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              </font></p>
+    </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="10"><img src="images/dummy.gif" width="10" height="10"></td>
+    <td height="10" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+</body>
+
+</html>
+

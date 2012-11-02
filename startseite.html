@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>CMS-net</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#F7F7F7" text="#000000" link="#000000" vlink="#000000" alink="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/navigation/symb_editieren_b.gif','images/navigation/text_editieren.gif','images/navigation/symb_benutzer_b.gif','images/navigation/medien_b.gif','images/navigation/text_medien.gif','images/navigation/editieren_b.gif','images/navigation/vorschau_b.gif','images/navigation/text_vorschau.gif','images/navigation/veroeffentlichen_b.gif','images/navigation/text_veroeffentlichen.gif','images/navigation/benutzer_b.gif','images/navigation/text_benutzer.gif','images/navigation/verwalten_b.gif','images/navigation/text_verwalten.gif','images/navigation/administrator_b.gif','images/navigation/text_administrator.gif')">
+<div align="center"><img src="images/dummy.gif" width="10" height="10"></div>
+<table width="741" cellspacing="0" cellpadding="0" align="center" height="97%">
+  <tr>
+    <td align="left" valign="top" height="288"> <img src="images/kopfleiste.gif" width="741" height="53"><br>
+      <img src="images/kopf_editieren.gif" width="741" height="100"><br>
+      <table width="741" border="0" cellspacing="0" cellpadding="0" background="images/hg_folgeseiten.gif" height="41">
+        <tr>
+          <td height="28" align="right" valign="bottom"> 
+            <div align="right"><img src="images/navigation/text_dummy.gif" width="500" height="25" name="text_dummy"><img src="images/dummy.gif" width="10" height="10"><br>
+              <img src="images/dummy.gif" width="2" height="25"><a href="#" onClick="MM_nbGroup('down','group1','editieren_a','images/navigation/editieren_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','editieren_a','images/navigation/editieren_b.gif','images/navigation/editieren_b.gif','text_dummy','images/navigation/text_editieren.gif','',1);MM_nbGroup('over','editieren_a','images/navigation/editieren_b.gif','images/navigation/editieren_b.gif','text_dummy','images/navigation/text_editieren.gif','','s_editieren','images/navigation/symb_editieren_b.gif','',1)"><img src="images/navigation/editieren_a.gif" width="45" height="16" border="0" name="editieren_a"></a><a href="javascript:;" onClick="MM_nbGroup('down','group1','medien','images/navigation/medien_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','medien','images/navigation/medien_b.gif','images/navigation/medien_b.gif','text_dummy','images/navigation/text_medien.gif','',1);MM_nbGroup('over','medien','images/navigation/medien_b.gif','images/navigation/medien_b.gif','text_dummy','images/navigation/text_medien.gif','',1)"><img src="images/navigation/medien_a.gif" width="40" height="16" name="medien" border="0"></a><a href="#" onClick="MM_nbGroup('down','group1','vorschau','images/navigation/vorschau_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','vorschau','images/navigation/vorschau_b.gif','images/navigation/vorschau_b.gif','text_dummy','images/navigation/text_vorschau.gif','',1);MM_nbGroup('over','vorschau','images/navigation/vorschau_b.gif','images/navigation/vorschau_b.gif','text_dummy','images/navigation/text_vorschau.gif','','s_vorschau','images/navigation/symb_benutzer_b.gif','',1)"><img src="images/navigation/vorschau_a.gif" width="45" height="16" name="vorschau" border="0"></a><a href="#" onClick="MM_nbGroup('down','group1','veroeffentlichen','images/navigation/veroeffentlichen_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','veroeffentlichen','images/navigation/veroeffentlichen_b.gif','images/navigation/veroeffentlichen_b.gif','text_dummy','images/navigation/text_veroeffentlichen.gif','',1);MM_nbGroup('over','veroeffentlichen','images/navigation/veroeffentlichen_b.gif','images/navigation/veroeffentlichen_b.gif','text_dummy','images/navigation/text_veroeffentlichen.gif','','s_veroeffentlichen','images/navigation/symb_benutzer_b.gif','',1)"><img src="images/navigation/veroeffentlichen_a.gif" width="69" height="16" name="veroeffentlichen" border="0"></a><a href="#" onClick="MM_nbGroup('down','group1','benutzer','images/navigation/benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','benutzer','images/navigation/benutzer_b.gif','images/navigation/benutzer_b.gif','text_dummy','images/navigation/text_benutzer.gif','',1);MM_nbGroup('over','benutzer','images/navigation/benutzer_b.gif','images/navigation/benutzer_b.gif','text_dummy','images/navigation/text_benutzer.gif','','s_benutzer','images/navigation/symb_benutzer_b.gif','',1)"><img src="images/navigation/benutzer_a.gif" width="44" height="16" name="benutzer" border="0"></a><a href="#" onClick="MM_nbGroup('down','group1','verwalten','images/navigation/verwalten_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','verwalten','images/navigation/verwalten_b.gif','images/navigation/verwalten_b.gif','text_dummy','images/navigation/text_verwalten.gif','',1);MM_nbGroup('over','verwalten','images/navigation/verwalten_b.gif','images/navigation/verwalten_b.gif','text_dummy','images/navigation/text_verwalten.gif','','s_verwalten','images/navigation/symb_benutzer_b.gif','',1)"><img src="images/navigation/verwalten_a.gif" width="50" height="16" name="verwalten" border="0"></a><a href="#" onClick="MM_nbGroup('down','group1','administrator','images/navigation/administrator_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','administrator','images/navigation/administrator_b.gif','images/navigation/administrator_b.gif','text_dummy','images/navigation/text_administrator.gif','',1);MM_nbGroup('over','administrator','images/navigation/administrator_b.gif','images/navigation/administrator_b.gif','text_dummy','images/navigation/text_administrator.gif','','s_administrator','images/navigation/symb_benutzer_b.gif','',1)"><img src="images/navigation/administrator_a.gif" width="63" height="16" name="administrator" border="0"></a><img src="images/dummy.gif" width="7" height="10"> 
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table width="741" border="0" cellspacing="0" cellpadding="0" background="images/grauer_bogen.gif" height="10">
+        <tr>
+          <td align="left" valign="bottom" height="24"> 
+            <table width="741" border="0" cellspacing="0" cellpadding="0" height="24">
+              <tr> 
+                <td align="left" valign="bottom"> 
+                  <div align="left"><img src="images/dummy.gif" width="741" height="6"><br>
+                    <img src="images/dummy.gif" width="390" height="15"> <a href="javascript:;" onClick="MM_nbGroup('down','group1','s_editieren','images/navigation/symb_editieren_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_editieren','images/navigation/symb_editieren_b.gif','images/navigation/symb_editieren_b.gif','text_dummy','images/navigation/text_editieren.gif','',1);MM_nbGroup('over','s_editieren','images/navigation/symb_editieren_b.gif','images/navigation/symb_editieren_b.gif','text_dummy','images/navigation/text_editieren.gif','',1)"><img src="images/navigation/symb_editieren_a.gif" width="10" height="16" name="s_editieren" border="0"></a><img src="images/dummy.gif" width="27" height="10" name="dummy" border="0"><a href="#" onClick="MM_nbGroup('down','group1','s_medien','images/navigation/symb_benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_medien','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_medien.gif','',1);MM_nbGroup('over','s_medien','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_medien.gif','','medien','images/navigation/medien_b.gif','',1)"><img src="images/navigation/symb_benutzer_a.gif" width="20" height="15" name="s_medien" border="0"></a><img src="images/dummy.gif" width="22" height="8" name="dummy2" border="0"><a href="#" onClick="MM_nbGroup('down','group1','s_vorschau','images/navigation/symb_benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_vorschau','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_vorschau.gif','',1);MM_nbGroup('over','s_vorschau','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_vorschau.gif','','vorschau','images/navigation/vorschau_b.gif','',1)"><img src="images/navigation/symb_benutzer_a.gif" width="20" height="15" name="s_vorschau" border="0"></a><img src="images/dummy.gif" width="33" height="10" name="dummy3" border="0"><a href="#" onClick="MM_nbGroup('down','group1','s_veroeffentlichen','images/navigation/symb_benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_veroeffentlichen','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_veroeffentlichen.gif','',1);MM_nbGroup('over','s_veroeffentlichen','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_veroeffentlichen.gif','','veroeffentlichen','images/navigation/veroeffentlichen_b.gif','',1)"><img src="images/navigation/symb_benutzer_a.gif" width="20" height="15" name="s_veroeffentlichen" border="0"></a><img src="images/dummy.gif" width="42" height="9" name="dummy4" border="0"><a href="#" onClick="MM_nbGroup('down','group1','s_benutzer','images/navigation/symb_benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_benutzer','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_benutzer.gif','',1);MM_nbGroup('over','s_benutzer','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_benutzer.gif','','benutzer','images/navigation/benutzer_b.gif','',1)"><img src="images/navigation/symb_benutzer_a.gif" width="20" height="15" name="s_benutzer" border="0"></a><img src="images/dummy.gif" width="27" height="10" name="dummy5" border="0"><a href="#" onClick="MM_nbGroup('down','group1','s_verwalten','images/navigation/symb_benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_verwalten','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_verwalten.gif','',1);MM_nbGroup('over','s_verwalten','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_verwalten.gif','','verwalten','images/navigation/verwalten_b.gif','',1)"><img src="images/navigation/symb_benutzer_a.gif" width="20" height="15" name="s_verwalten" border="0"></a><img src="images/dummy.gif" width="33" height="10" name="dummy6" border="0"><a href="#" onClick="MM_nbGroup('down','group1','s_administrator','images/navigation/symb_benutzer_b.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','s_administrator','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_administrator.gif','',1);MM_nbGroup('over','s_administrator','images/navigation/symb_benutzer_b.gif','images/navigation/symb_benutzer_b.gif','text_dummy','images/navigation/text_administrator.gif','','administrator','images/navigation/administrator_b.gif','',1)"><img src="images/navigation/symb_benutzer_a.gif" width="20" height="15" name="s_administrator" border="0"></a><img src="images/dummy.gif" width="5" height="10"><img src="images/dummy.gif" width="10" height="10"></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table width="741" border="0" cellspacing="0" cellpadding="0" height="185%">
+        <tr>
+          <td background="images/hg_grau.gif" align="left" valign="top"> 
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<div align="center"><img src="images/dummy2.gif" width="741" height="5"><br>
+  <img src="images/dummy.gif" width="10" height="10"> </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body link="#555555" text="#555555" background="images/hg_grau.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script language="JavaScript" type="text/javascript">
+<!--
+	// Lädt das Frame nach, wenn schon submittet wurde (Gilt NUR FÜR die DELETE AKTIONEN IN DER SITEVIEW !!!!)
+    var query=this.location.search.substring(1);
+    if (query.length > 0){
+        var params=query.split("&");
+        for (var i=0 ; i<params.length ; i++){
+            var pos = params[i].indexOf("=");
+            var name = params[i].substring(0, pos);
+            var value = params[i].substring(pos + 1);
+            if (value == "Submit" ) {
+				// Found
+				//document.writeln("sdsdds");
+				parent.tree.location.reload();
+            }
+        }
+    }
+// -->
+</script>
+<table width="725" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left" valign="top"> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" width="715"> 
+      <table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td align="left" valign="top">
+            <form name="form1" method="post" action="{post}">
+              <input type="hidden" name="action2" value="{action2}">
+				  <input type="hidden" name="Submit" value="Submit">
+              {sessid}
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						<b>Grundeinstellungen der Website</b><br>&nbsp;</font></td>
+                </tr>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="16%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Ziel-URL:</font></td>
+                  <td width="84%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <input type="text" name="surl" size="50" value="{surl}">
+                    </font></td>
+                </tr>
+                <tr>
+                  <td width="16%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Demoserver-URL:</font></td>
+                  <td width="84%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <input type="text" name="url_demo" size="50" value="{url_demo}">
+                    &nbsp; 
+                    <!-- BEGIN masteradmin -->
+                    <input type="image" border="0" name="submit2" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    <!-- END masteradmin -->
+                    </font></td>
+                </tr>
+              </table>
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> <br>
+                    <b>Spracheinstellungen</b><br>
+                    &nbsp;</font></td>
+                </tr>
+              </table>
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="16%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    Hauptsprache</font></td>
+                  <td width="84%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <select name="lang_default">
+<!-- BEGIN lange -->
+<option value="{lang_short}" {lang_selected}>{lang_name}</option>
+<!-- END lange -->
+                    </select>
+                    </font></td>
+                </tr>
+				 </table>
+				 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="16%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    Sprachen</font></td>
+                  <td width="84%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <select name="language[]" size="5" multiple>
+<!-- BEGIN lang -->
+<option value="{lang_short}" {lang_selected}>{lang_name}</option>
+<!-- END lang -->
+                    </select>
+                    </font></td>
+                </tr>
+				 </table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> <br>
+						<b>Moduleinstellungen</b><br>&nbsp;</font></td>
+                </tr>
+              </table>
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!-- BEGIN modules -->
+                <tr>
+                  <td width="16%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						{variable_name}</font></td>
+                  <td width="84%" height="38"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <input type="text" name="{variable}" size="50" value="{variable_value}">
+                    </font></td>
+                </tr>
+<!-- END modules -->
+					 <tr>
+                  <td width="16%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						&nbsp;
+						</font></td>
+                  <td width="84%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <!-- BEGIN masteradmin2 -->
+                    <input type="image" border="0" name="submit1" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    <!-- END masteradmin2 -->
+                    </font></td>
+                </tr>
+              </table>
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> </font>
+            </form>
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td height="10" align="left" valign="top"><img src="images/dummy.gif" width="10" height="10"></td>
+  </tr>
+</table>
+</body>
+</html>

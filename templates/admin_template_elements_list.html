@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+<title>Untitled Document</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+
+
+<body link="#555555" text="#555555" background="images/hg_grau.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="725" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align="left" valign="top" width="715"> 
+      <table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td align="left" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" valign="top" width="86%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Vorlagenverwaltung 
+                  - editierbare Seitenbereiche definieren</b></font> </td>
+                <td width="14%">
+                  <div align="right"><img src="images/navigation/but_hilfe.gif" width="30" height="20" onClick="MM_openBrWindow('../kontexthilfe/verwalten_elementlisten_editieren_detail.html','kontext','scrollbars=yes,resizable=yes,width=200,height=200')"></div>
+                </td>
+              </tr>
+            </table>
+            <form name="form1" method="post" action="{post}">
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="hidden" name="tid" value="{tid}">
+              <input type="hidden" name="elid" value="{elid}">
+              <input type="hidden" name="action" value="{action}">
+				  <input type="hidden" name="Submit" value="submit">
+              {sessid} </font> 
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="150"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Seitenbereich</font></td>
+                  <td width="350"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <input type="text" name="elname" size="35" maxlength="50" value="{elname}">
+                    </font></td>
+                </tr>
+                <tr>
+                  <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Max.
+                    Objekte</font></td>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    <input type="text" name="elmaxcount" maxlength="3" size="8" value="{elmaxcount}">
+                    (0 bedeutet, da&szlig; die Anzahl unbestimmt ist)</font></td>
+                </tr>
+<!-- BEGIN properties -->
+				<tr><td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+				{prop_name}
+				</font></td><td>
+				<input type="text" name="{prop_id}" size=35 naxlength="50" value="{prop_value}">
+				</td></tr>
+<!-- END properties -->
+                <tr> 
+                  <td></td>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    </font></td>
+                </tr>
+              </table>
+            </form>
+            <img src="images/striche_ganz2.gif" width="100%" height="10">
+            <h3><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Objekte 
+              erlauben</font></h3>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> Bitte 
+              f&uuml;gen Sie hier alle Objekte ein, die f&uuml;r diesen editierbaren 
+              Seitenbereich erlaubt sind und verkn&uuml;pfen sie die Objekt-Vorlagen!</font></p>
+            <table width="77%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="36%" height="17"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Objekt</font></b></td>
+                <td width="15%" height="17"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Max. 
+                  Objekte</font></b></td>
+                <td width="29%" height="17"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Vorlage</font></b></td>
+                <td width="9%" height="17"><b><font face="Verdana, Arial, Helvetica, sans-serif"></font></b></td>
+                <td width="11%" height="17"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1">L&ouml;schen</font></b></td>
+              </tr>
+              <!-- BEGIN list -->
+              <form name="form1" method="post" action="{post}">
+                <input type="hidden" name="tid" value="{tid}">
+                <input type="hidden" name="elid" value="{elid}">
+                <input type="hidden" name="etypid" value="{etypid}">
+                <input type="hidden" name="action" value="{action}">
+                <input type="hidden" name="action2" value="{ea_ch_action2}">
+                {sessid}
+                <tr> 
+                  <td width="36%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">{ename}</font></td>
+                  <td width="15%"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="text" name="eamaxcount" maxlength="3" size="8" value="{eamaxcount}">
+                    </font></td>
+                  <td width="29%"> 
+                    <select name="etemplatefilelist">
+                      <!-- BEGIN tllist -->
+                      <option value="{etname}" {etchecked}>{etname}</option>
+                      <!-- END tllist -->
+                    </select>
+                  </td>
+                  <td width="9%"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="image" border="0" name="submit2" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    </font></td>
+                  <td width="11%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="{lnk_edelete}"><img src="images/navigation/but_loeschen_tabelle.gif" width="20" height="20" border="0"></a></font></td>
+                </tr>
+              </form>
+              <!-- END list -->
+            </table>
+            <br>
+            <img src="images/striche_ganz2.gif" width="100%" height="10"><br>
+            <h3><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Neues 
+              Objekt hinzuf&uuml;gen </font></h3>
+            <form name="form1" method="post" action="{post}">
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="hidden" name="action" value="{action}">
+              <input type="hidden" name="action2" value="{ea_nw_action2}">
+              <input type="hidden" name="tid" value="{tid}">
+              <input type="hidden" name="elid" value="{elid}">
+              {sessid} </font> 
+              <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="66%"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <select name="etypid">
+                      <!-- BEGIN elist -->
+                      <option value="{id}"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">{ename}</font></option>
+                      <!-- END elist -->
+                    </select>
+                    <input type="image" border="0" name="submit3" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    </font></td>
+                  <td width="34%">&nbsp; </td>
+                </tr>
+              </table>
+            </form>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>
+              <a href="{lnk_back}"><img src="images/navigation/but_zurueck.gif" width="55" height="20" border="0"></a></font></p>
+    </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td height="10" align="left" valign="top"><img src="images/dummy.gif" width="10" height="10"></td>
+  </tr>
+</table>
+</body>
+
+</html>
+

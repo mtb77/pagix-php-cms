@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+<title>Untitled Document</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+</head>
+
+
+
+<body link="#555555" text="#555555" background="images/hg_grau_rechts.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script language="JavaScript" type="text/javascript">
+<!--
+	// Lädt das Frame nach, wenn schon submittet wurde
+    var query=this.location.search.substring(1);
+    if (query.length > 0){
+        var params=query.split("&");
+        for (var i=0 ; i<params.length ; i++){
+            var pos = params[i].indexOf("=");
+            var name = params[i].substring(0, pos);
+            var value = params[i].substring(pos + 1);
+            if (value == "Submit" ) {
+				// Found
+				//document.writeln("sdsdds");
+				parent.tree.location.reload();
+            }
+        }
+    }
+// -->
+</script>
+<table width="475" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align="left" valign="top" width="465"> 
+      <form name="form1" method="get" action="{post}">
+        <table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td>
+              <h1><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                <input type="hidden" name="action" value="{action}">
+                <input type="hidden" name="action2" value="{action2}">
+                <input type="hidden" name="dir" value="{dir}">
+                <input type="hidden" name="name_old" value="{name_old}">
+					 <input type="hidden" name="Submit" value="Submit">
+                {sessid} <b>Neuen Ordner anlegen</b></font></h1>
+              <h3><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Name 
+                <input type="text" name="name" size="35" value="{name}">
+                <input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                </font></h3>
+      </td>
+          </tr>
+        </table>
+        </form>
+    </td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td height="10" align="left" valign="top" width="465"><img src="images/dummy.gif" width="10" height="10"></td>
+  </tr>
+</table>
+</body>
+
+</html>
+

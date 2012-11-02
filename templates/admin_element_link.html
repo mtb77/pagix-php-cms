@@ -1,0 +1,45 @@
+<form name="form1" method="post" action="{post}">
+  <input type="hidden" name="id" value="{id}">
+        <input type="hidden" name="action" value="el">
+		  <input type="hidden" name="language" value="{language}">
+        <input type="hidden" name="action2" value="insert">
+        <input type="hidden" name="tid" value="{tid}">
+        <input type="hidden" name="elid" value="{elid}">
+        <input type="hidden" name="pid" value="{pid}">
+        {sessid}
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="350"> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td> 
+              <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr> 
+                  <td width="14%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Linkname:</font></td>
+                  <td colspan="2"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="text" name="linkname" value="{linkname}" size="30">
+                    </font></td>
+                </tr>
+                <tr> 
+                  <td width="14%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Linkadresse:</font></td>
+                  <td colspan="2"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="text" name="linkadress" value="{linkadress}" size="30">
+                    </font></td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td colspan="3"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="checkbox" name="popupwin" value="1" {popupwin}>
+                    Link in neuem Fenster &ouml;ffnen</font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      
+    </td>
+    <td align="left" valign="bottom">
+<input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+	  </td>
+  </tr>
+</table>
+</form>

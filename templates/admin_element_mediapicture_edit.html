@@ -1,0 +1,121 @@
+<form name="form{id}" method="post" action="{post}">
+<input type="hidden" name="action" value="el">
+<input type="hidden" name="action2" value="insert">
+<input type="hidden" name="language" value="{language}">
+
+<input type="hidden" name="dir" value="{dir}">
+<input type="hidden" name="file" value="{file}">
+<input type="hidden" name="xs" value="{xs}">
+<input type="hidden" name="xe" value="{xe}">
+<input type="hidden" name="ys" value="{ys}">
+<input type="hidden" name="ye" value="{ye}">
+
+<input type="hidden" name="id" value="{id}">
+<input type="hidden" name="tid" value="{tid}">
+<input type="hidden" name="elid" value="{elid}">
+<input type="hidden" name="pid" value="{pid}">
+
+<input type="hidden" name="Submit" value="">
+{sessid}
+<script type="text/javascript">
+<!--
+	function submv(val) {
+ 		document.forms[0].Submit.value = val;
+ 		document.forms[0].submit();
+   }
+//-->
+</script>
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="350"> 
+        <table border="0" cellspacing="0" cellpadding="0" width="350">
+          <tr align="left" valign="top"> 
+            <td width="148" height="27"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Verzeichnis</font></td>
+            <td width="272" colspan="2"> 
+              <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                <select name="path" onChange="document.forms['form{id}'].submit()">
+                  <!-- BEGIN folderlist -->
+                  <option value="{val}" {sele}>{foldername}</option>
+                  <!-- END folderlist -->
+                </select>
+                </font></p>
+            </td>
+          </tr>
+          <tr align="left" valign="top"> 
+            <td width="148"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Bildname 
+              </font></td>
+            <td width="272" colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <select name="filename"  onChange="document.forms['form{id}'].submit()">
+                <!-- BEGIN filelist -->
+                <option value="{fval}" {fsele}>{filename}</option>
+                <!-- END filelist -->
+              </select>              </font></td>
+          </tr>
+          <tr> 
+            <td height="18" colspan=2>
+				<table border="0" cellspacing="0" cellpadding="0" align="center">
+					  <tr>
+						<td width="100%" align="center" valign="middle">
+						<br>
+                    <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						  <img src="{lnk_image}" align="middle"></font></div>
+						  <br>
+                  </td>
+                </tr>
+              </table>
+			</td>
+          </tr>
+          <tr align="left" valign="top"> 
+            <td width="148" height="13"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b> 
+              Bild verlinken </b></font></td>
+            <td width="272" height="13" colspan="2"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="radio" name="linkjn" value="ja" {linkjchecked} onclick="document.forms['form{id}'].submit()">
+              Ja 
+              <input type="radio" name="linkjn" value="nein" {linknchecked} onclick="document.forms['form{id}'].submit()">
+              Nein </font></td>
+          </tr>
+        </table>
+<!-- BEGIN linker -->
+        <table width="350" border="0" cellspacing="0" cellpadding="0">
+          <tr align="left" valign="top"> 
+            <td width="123" height="40"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="radio" name="link" value="e" {echecked}>
+              Externer Link<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Pfad eingeben)</font></td>
+            <td width="227" colspan="2"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="text" name="link_extern" size="30" value="{link_extern}">
+              &nbsp; </font></td>
+          </tr>
+          <tr align="left" valign="top"> 
+            <td width="123"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="radio" name="link" value="i" {ichecked}>
+              Interner Link<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Seite ausw&auml;hlen) <br>
+              <br>
+              </font></td>
+            <td width="227" colspan="2"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <select name="link_intern">
+                <option value="0"></option>
+                <!-- BEGIN adress -->
+                <option value="{adress_id}" {asele}>{adress_name}</option>
+                <!-- END adress -->
+              </select>
+              <br>
+              &nbsp; </font></td>
+          </tr>
+          <tr> 
+            <td colspan="2"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+              <input type="checkbox" name="popupwin" value="1" {popupwin}>
+              </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              Link im neuen Fenster &ouml;ffnen </font></td>
+          </tr>
+        </table>
+        <!-- END linker -->
+      </td>
+    <td valign="bottom"> 
+      <input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+    </td>
+	</tr>
+</table>
+</form>
+    

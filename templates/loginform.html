@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Pagix net CMS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="cms1.css" type="text/css">
+</head>
+
+<body bgcolor="#F7F7F7" text="#000000" link="#000000" vlink="#000000" alink="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center"></div>
+<form action="<?php print $this->url() ?>" method=post>
+  <table width="741" cellspacing="0" cellpadding="0" align="center" height="100%" border="0">
+    <tr>
+    <td align="left" valign="middle" height="100%"> 
+        <table width="741" cellspacing="0" cellpadding="0" height="391" bgcolor="#FFFFFF" border="0">
+          <tr> 
+            <td align="right" valign="top" height="400" width="741" background="images/hg-index_4.gif"><img src="images/hg-index_1.gif" width="741" height="294"><img src="images/hg-index_1b.gif" width="741" height="25"> 
+              <table width="741" border="0" cellspacing="0" cellpadding="0" height="26">
+                <tr> 
+                  <td background="images/hg-index_2.gif" align="right" valign="middle" height="16"> 
+                    <div align="right"> 
+                      <input type="text" name="username" size="12">
+                      <img src="images/dummy.gif" width="20" height="10"></div>
+                  </td>
+                </tr>
+              </table>
+            <table width="741" border="0" cellspacing="0" cellpadding="0" height="19">
+              <tr> 
+                <td background="images/hg-index_3.gif" align="right" valign="middle" height="26"> 
+                  <div align="right"> 
+                      <input type="password" name="password" size="12">
+                    <img src="images/dummy.gif" width="20" height="10"></div>
+                </td>
+              </tr>
+            </table>
+
+            <table width="741" border="0" cellspacing="0" cellpadding="0" height="22">
+              <tr> 
+                  <td background="images/hg-index_4.gif" align="right" height="22">
+                    <div align="right"><a href="javascript:document.forms[0].submit();" onfocus="if(this.blur)this.blur()">
+                      <input type="image" border="0" name="Submit" src="images/dummy.gif" width="10" height="10" align="left">
+                      <img src="images/button-anmeldung.gif" width="18" height="16" border="0"></a><img src="images/dummy.gif" width="22" height="10"></div>
+                  </td>
+              </tr>
+            </table>
+            <img src="images/dummy2.gif" width="741" height="5"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</form>
+<?php global $username; if ( isset($username) ): ?>
+<!-- failed login code -->
+<p>
+<script language="JavaScript">
+alert("Benutzername oder Passwort fehlerhalft");
+</script>
+
+<?php endif ?>
+<script language="JavaScript">
+document.forms[0].elements[0].focus();
+</script>
+</body>
+</html>

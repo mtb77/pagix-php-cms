@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body link="#555555" text="#555555" background="images/hg_grau_rechts.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script language="JavaScript" type="text/javascript">
+<!--
+	// Lädt das Frame nach, wenn schon submittet wurde
+    var query=this.location.search.substring(1);
+    if (query.length > 0){
+        var params=query.split("&");
+        for (var i=0 ; i<params.length ; i++){
+            var pos = params[i].indexOf("=");
+            var name = params[i].substring(0, pos);
+            var value = params[i].substring(pos + 1);
+            if (name == "Submit" ) {
+				// Found
+				//document.writeln("sdsdds");
+				parent.tree.location.reload();
+            }
+        }
+    }
+// -->
+</script>
+<table width="475" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left" valign="top"> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" width="465"> 
+      <table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td align="left" valign="top"> 
+            <form name="form1" method="get" action="{post}">
+              <h1> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                <input type="hidden" name="id" value="{id}">
+                <input type="hidden" name="parentid" value="{parentid}">
+                <input type="hidden" name="action" value="{action}">
+                <input type="hidden" name="action2" value="{action2}">
+					 <input type="hidden" name="Submit" value="Submit">
+                {sessid} Neuen Ordner anlegen</font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>
+                <br>
+                </font> </h1>
+              <table width="99%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td align="left" valign="middle" width="9%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Name 
+                    </font></td>
+                  <td align="left" valign="middle" width="91%"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="text" name="fname" size="35" value="{fname}">
+                    <!-- BEGIN masteradmin -->
+                    <input type="image" border="0" name="Submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    <!-- END masteradmin -->
+                    </font></td>
+                </tr>
+              </table>
+              </form>
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td height="10"><img src="images/dummy.gif" width="10" height="10"></td>
+  </tr>
+</table>
+</body>
+</html>

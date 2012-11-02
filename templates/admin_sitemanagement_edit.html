@@ -1,0 +1,172 @@
+<html>
+
+<head>
+
+<title>Untitled Document</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+<body link="#555555" text="#555555" background="images/hg_grau.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="725" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align="left" valign="top" width="715"> 
+      <table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td align="left" valign="top"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Ändern 
+                  / Einfügen einer Site</b></font> </td>
+                <td width="10%">
+                  <div align="right"></div>
+                </td>
+              </tr>
+            </table>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Site-ID: 
+              {sid}</font></p>
+            <form name="form1" method="post" action="{post}">
+              <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+              <input type="hidden" name="sid" value="{sid}">
+              <input type="hidden" name="action" value="{action}">
+              <input type="hidden" name="action2" value="{action2}">
+              {sessid} </font> 
+              <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Kundenname</font></td>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="text" name="kundenname" size="50" maxlength="50" value="{kundenname}">
+                    </font></td>
+                </tr>
+                <tr> 
+                  <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Admin-Account</font></td>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="text" name="admin" value="{admin}">
+                    </font></td>
+                </tr>
+                <tr> 
+                  <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Admin-Passwort</font></td>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="textfield" name="adminpass" value="{adminpass}">
+                    </font></td>
+                </tr>
+                <tr> 
+                  <td valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">LIVE-URL</font></td>
+                  <td valign="top"> 
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                      <input type="text" name="url" size="50" value="{url}">
+                      </font></p>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="checkbox" name="ftplive" value="true">
+                          Soapserver auf Zielrechner per FTP uploaden</font></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Host (wird nicht gespeichert)</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="text" name="livehost">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Verzeichnis</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="text" name="livedir">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Username</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="text" name="liveuser">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Password</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="password" name="livepasswd">
+                          </font></td>
+                      </tr>
+                    </table>
+                    <p>&nbsp; </p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">DEMO-URL</font></td>
+                  <td valign="top"> 
+                    <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                      <input type="text" name="url_demo" size="50" value="{url_demo}">
+                      </font></p>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="checkbox" name="ftpdemo" value="true">
+                          Soapserver auf Zielrechner per FTP uploaden</font></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Host (wird nicht gespeichert)</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="text" name="demohost">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Verzeichnis</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="text" name="demodir">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP 
+                          Username</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="text" name="demouser">
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">FTP
+                          Password</font></td>
+                        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <input type="password" name="demopasswd">
+                          </font></td>
+                      </tr>
+                    </table>
+                    <p>&nbsp; </p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td>&nbsp;</td>
+                  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    <input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                    </font></td>
+                </tr>
+                <tr> 
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </form>
+    </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td height="10" align="left" valign="top"><img src="images/dummy.gif" width="10" height="10"></td>
+  </tr>
+</table>
+</body>
+
+</html>
+

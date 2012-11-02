@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body link="#555555" text="#555555" background="images/hg_grau_rechts.gif" vlink="#555555" alink="#555555" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script language="JavaScript" type="text/javascript">
+<!--
+	// Lädt das Frame nach, wenn schon submittet wurde
+    var query=this.location.search.substring(1);
+    if (query.length > 0){
+        var params=query.split("&");
+        for (var i=0 ; i<params.length ; i++){
+            var pos = params[i].indexOf("=");
+            var name = params[i].substring(0, pos);
+            var value = params[i].substring(pos + 1);
+            if (name == "Submit" ) {
+				// Found
+				//document.writeln("sdsdds");
+				parent.tree.location.reload();
+            }
+        }
+    }
+// -->
+</script>
+<table border="0" cellspacing="0" cellpadding="0" width="475">
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align="left" valign="top">
+      <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr align="left" valign="top">
+
+          <td width="465">
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr>
+                <td align="left" valign="top">
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    </font>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        
+                      <td align="left" valign="top"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b> 
+                        Neue Seite erstellen</b></font></td>
+                        <td width="7%">
+                          <div align="right"></div>
+                        </td>
+                      </tr>
+                    </table>
+					
+                  <form action="{post}" method="get" >
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr align="left" valign="middle">
+                        
+                      <td width="100"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                       Seitentyp </font></td>
+                        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                          <select name="ptype">
+                            <option value="HTML" selected>Webseite</option>
+                            <!-- BEGIN list -->
+                            <option value="{list_ptype}">{list_pname}</option>
+                            <!-- END list -->
+                          </select>
+                          <input type="image" border="0" name="submit" src="images/navigation/but_uebernehmen.gif" width="87" height="22">
+                          </font> </td>
+                      </tr>
+                    </table>
+                    
+                    <input type="hidden" name="action" value="{action}">
+						  <input type="hidden" name="action2" value="{action2}">
+                    <input type="hidden" name="id" value="{pid}">
+                    <input type="hidden" name="parentid" value="{parentid}">
+						  <input type="hidden" name="Submit" value="Submit">
+                    {sessid}<font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                    </font> 
+                  </form>
+                                         </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="10"><img src="images/dummy.gif" width="10" height="10"></td>
+    <td height="10">&nbsp;</td>
+  </tr>
+</table>
+</body>
+
+</html>

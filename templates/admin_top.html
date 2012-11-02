@@ -1,0 +1,439 @@
+<html>
+<head>
+<title>Pagix net CMS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#F7F7F7" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/navigation/admin_a.gif','images/navigation/admin_b.gif','images/navigation/administrator_a.gif','images/navigation/administrator_b.gif','images/navigation/benutzer_a.gif','images/navigation/benutzer_b.gif','images/navigation/editieren_a.gif','images/navigation/editieren_b.gif','images/navigation/einstellungen_a.gif','images/navigation/einstellungen_b.gif','images/navigation/medien_a.gif','images/navigation/medien_b.gif','images/navigation/module_a.gif','images/navigation/module_b.gif','images/navigation/speichern_a.gif','images/navigation/speichern_b.gif','images/navigation/symb_admin_a.gif','images/navigation/symb_admin_b.gif','images/navigation/symb_editieren_a.gif','images/navigation/symb_editieren_b.gif','images/navigation/symb_medien_a.gif','images/navigation/symb_medien_b.gif','images/navigation/symb_veroeffentlichen_a.gif','images/navigation/symb_veroeffentlichen_b.gif','images/navigation/symb_verwalten_a.gif','images/navigation/symb_verwalten_b.gif','images/navigation/symb_vorschau_a.gif','images/navigation/symb_vorschau_b.gif','images/navigation/text_administrator.gif','images/navigation/text_benutzer.gif','images/navigation/text_dummy.gif','images/navigation/text_editieren.gif','images/navigation/text_einstellungen.gif','images/navigation/text_medien.gif','images/navigation/text_module.gif','images/navigation/text_veroeffentlichen.gif','images/navigation/text_verwalten.gif','images/navigation/text_vorlage.gif','images/navigation/text_vorschau.gif','images/navigation/veroeffentlichen_a.gif','images/navigation/veroeffentlichen_b.gif','images/navigation/verwalten_a.gif','images/navigation/verwalten_b.gif','images/navigation/verwalten_b.gif','images/navigation/vorlagen_a.gif','images/navigation/vorlagen_b.gif','images/navigation/vorschau_a.gif','images/navigation/vorschau_b.gif','images/bogen_w_doppelt.gif','images/bogen_w_ganz.gif')" background="images/hg_graubogen_seite.gif">
+<img src="images/dummy3.gif" width="1" height="4"><br>
+      <table width="741" border="0" cellspacing="0" cellpadding="0" height="1">
+        <tr bgcolor="#ACACA"> 
+          <td align="left" valign="top"><img src="images/dummy3.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+      <img src="images/kopfleiste.gif" width="750" height="34" border="0" usemap="#Map"><br>
+      <img src="images/kopf_pagix.gif" width="750" height="97" name="kopfimage"><br>
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr height="20"> 
+          <td align="right" valign="top">
+            <img src="images/navigation/text_dummy.gif" width="500" name="text_dummy" height="20"><img src="images/dummy.gif" width="3" height="10">
+          </td>
+          <td width="17" align="right" valign="top"><img src="images/dummy.gif" width="17" height="10"></td>
+        </tr>
+		</table>
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr height="13">
+          <td align="right" height="13">
+		  <!-- BEGIN editieren1 -->
+		  <a href="{lnk_editieren}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('editieren_click()')" onMouseOver="MM_callJS('editieren_over()')" onMouseOut="MM_callJS('editieren_out()')"> 
+            <img src="images/navigation/editieren_a.gif" width="47" height="13" name="editieren" border="0"></a> 
+          <!-- END editieren1 -->
+		  <!-- BEGIN media1 -->
+			<a href="{lnk_media}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('medien_click()')" onMouseOver="MM_callJS('medien_over()')" onMouseOut="MM_callJS('medien_out()')"> 
+            <img src="images/navigation/medien_a.gif" width="39" height="13" name="medien" border="0"></a>
+          <!-- END media1 -->
+		  <!-- BEGIN vorschau1 -->
+			<a href="{lnk_vorschau}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('vorschau_click()')" onMouseOver="MM_callJS('vorschau_over()')" onMouseOut="MM_callJS('vorschau_out()')"> 
+            <img src="images/navigation/vorschau_a.gif" width="45" height="13" name="vorschau" border="0"></a> 
+          <!-- END vorschau1 -->
+		  <!-- BEGIN speichern1 -->
+			<a href="{lnk_speichern}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('speichern_click()')" onMouseOver="MM_callJS('speichern_over()')" onMouseOut="MM_callJS('speichern_out()')"> 
+            <img src="images/navigation/speichern_a.gif" width="49" height="13" name="speichern" border="0"></a> 
+          <!-- END speichern1 -->
+		  <!-- BEGIN module1 -->
+			<a href="{lnk_module}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('module_click()')" onMouseOver="MM_callJS('module_over()')" onMouseOut="MM_callJS('module_out()')"> 
+            <img src="images/navigation/module_a.gif" width="40" height="13" name="module" border="0"></a> 
+          <!-- END module1 -->
+		  <!-- BEGIN verwalten1 -->
+			<a href="{lnk_verwalten}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('verwalten_click()')" onMouseOver="MM_callJS('verwalten_over()')" onMouseOut="MM_callJS('verwalten_out()')"> 
+            <img src="images/navigation/verwalten_a.gif" width="49" height="13" name="verwalten" border="0"></a> 
+          <!-- END verwalten1 -->
+		  <!-- BEGIN benutzer1 -->
+			<a href="{lnk_benutzer}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('benutzer_click()')" onMouseOver="MM_callJS('benutzer_over()')" onMouseOut="MM_callJS('benutzer_out()')">
+            <img src="images/navigation/benutzer_a.gif" width="45" height="13" name="benutzer" border="0"></a>
+          <!-- END benutzer1 -->
+		  <!-- BEGIN einstellungen1 -->
+			<a href="{lnk_einstellungen}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('optionen_click()')" onMouseOver="MM_callJS('optionen_over()')" onMouseOut="MM_callJS('optionen_out()')">
+            <img src="images/navigation/optionen_a.gif" width="46" height="13" name="optionen" border="0"></a> 
+          <!-- END einstellungen1 -->
+		  <!-- BEGIN sites1 -->  
+			<a href="{lnk_sites}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('admin_click()')" onMouseOver="MM_callJS('admin_over()')" onMouseOut="MM_callJS('admin_out()')">
+            <img src="images/navigation/admin_a.gif" width="37" height="13" name="admin" border="0"></a>
+				<!-- END sites1 -->
+				<a href="javascript:;" onfocus="if(this.blur)this.blur()" onClick="MM_openBrWindow('hilfe.html','hilfefenster','scrollbars=yes,resizable=yes,width=300,height=200')" onMouseOver="MM_callJS('hilfe_over()')" onMouseOut="MM_callJS('hilfe_out()')"><img src="images/navigation/hilfe_a.gif" width="27" height="13" name="hilfe" border="0"></a>
+				</td>
+          <td width="17" align="right" valign="top"><img src="images/dummy.gif" width="17" height="1"></td>
+        </tr>
+		</table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr height="24"> 
+          
+    <td align="right" valign="top"> 
+      <!-- BEGIN editieren2 -->
+      <a href="{lnk_editieren}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('editieren_click()')" onMouseOver="MM_callJS('editieren_over()')" onMouseOut="MM_callJS('editieren_out()')"> 
+      <img src="images/navigation/symb_editieren_a.gif" width="47" height="24" name="s_editieren" border="0"></a> 
+      <!-- END editieren2 -->
+      <!-- BEGIN media2 -->
+      <a href="{lnk_media}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('medien_click()')" onMouseOver="MM_callJS('medien_over()')" onMouseOut="MM_callJS('medien_out()')"> 
+      <img src="images/navigation/symb_medien_a.gif" width="39" height="24" name="s_medien" border="0"></a> 
+      <!-- END media2 -->
+      <!-- BEGIN vorschau2 -->
+      <a href="{lnk_vorschau}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('vorschau_click()')" onMouseOver="MM_callJS('vorschau_over()')" onMouseOut="MM_callJS('vorschau_out()')"> 
+      <img src="images/navigation/symb_vorschau_a.gif" width="45" height="24" name="s_vorschau" border="0"></a> 
+      <!-- END vorschau2 -->
+      <!-- BEGIN speichern2 -->
+      <a href="{lnk_speichern}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('speichern_click()')" onMouseOver="MM_callJS('speichern_over()')" onMouseOut="MM_callJS('speichern_out()')"> 
+      <img src="images/navigation/symb_speichern_a.gif" width="49" height="24" name="s_speichern" border="0"></a> 
+      <!-- END speichern2 -->
+      <!-- BEGIN module2 -->
+      <a href="{lnk_module}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('module_click()')" onMouseOver="MM_callJS('module_over()')" onMouseOut="MM_callJS('module_out()')"> 
+      <img src="images/navigation/symb_module_a.gif" width="40" height="24" name="s_module" border="0"></a> 
+      <!-- END module2 -->
+      <!-- BEGIN verwalten2 -->
+      <a href="{lnk_verwalten}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('verwalten_click()')" onMouseOver="MM_callJS('verwalten_over()')" onMouseOut="MM_callJS('verwalten_out()')"> 
+      <img src="images/navigation/symb_verwalten_a.gif" width="49" height="24" name="s_verwalten" border="0"></a> 
+      <!-- END verwalten2 -->
+      <!-- BEGIN benutzer2 -->
+      <a href="{lnk_benutzer}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('benutzer_click()')" onMouseOver="MM_callJS('benutzer_over()')" onMouseOut="MM_callJS('benutzer_out()')"> 
+      <img src="images/navigation/symb_benutzer_a.gif" width="45" height="24" name="s_benutzer" border="0"></a> 
+      <!-- END benutzer2 -->
+      <!-- BEGIN einstellungen2 -->
+      <a href="{lnk_einstellungen}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('optionen_click()')" onMouseOver="MM_callJS('optionen_over()')" onMouseOut="MM_callJS('optionen_out()')"> 
+      <img src="images/navigation/symb_optionen_a.gif" width="46" height="24" name="s_optionen" border="0"></a> 
+      <!-- END einstellungen2 -->
+      <!-- BEGIN sites2 -->
+      <a href="{lnk_sites}" target="mainFrame" onfocus="if(this.blur)this.blur()" onClick="MM_callJS('admin_click()')" onMouseOver="MM_callJS('admin_over()')" onMouseOut="MM_callJS('admin_out()')"> 
+      <img src="images/navigation/symb_admin_a.gif" width="37" height="24" name="s_admin" border="0"></a> 
+      <!-- END sites2 -->
+      <a href="javascript:;" onfocus="if(this.blur)this.blur()" onClick="MM_openBrWindow('hilfe.html','hilfefenster','scrollbars=yes,resizable=yes,width=300,height=200')" onMouseOver="MM_callJS('hilfe_over()')" onMouseOut="MM_callJS('hilfe_out()')"> 
+      <img src="images/navigation/symb_hilfe_a.gif" width="27" height="24" name="s_hilfe" border="0"></a> 
+    </td>
+          <td width="17" align="right" valign="top"><img src="images/dummy.gif" width="17" height="1"></td>
+        </tr>
+		</table>
+
+      <table width="741" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr>
+          <td background="images/hg_grau.gif" align="left" valign="top">
+            <img src="images/bogen_w_ganz.gif" width="741" height="35" name="geteilter_bogen">
+          </td>
+        </tr>
+      </table>
+
+<script language="JavaScript">
+
+var auswahl;
+
+
+function mache_grau()
+{
+if (document.optionen) document.optionen.src="images/navigation/optionen_a.gif";
+if (document.s_optionen) document.s_optionen.src="images/navigation/symb_optionen_a.gif";
+if (document.module) document.module.src="images/navigation/module_a.gif";
+if (document.s_module) document.s_module.src="images/navigation/symb_module_a.gif";
+if (document.editieren) document.editieren.src="images/navigation/editieren_a.gif";
+if (document.s_editieren) document.s_editieren.src="images/navigation/symb_editieren_a.gif";
+if (document.medien) document.medien.src="images/navigation/medien_a.gif";
+if (document.s_medien) document.s_medien.src="images/navigation/symb_medien_a.gif";
+if (document.vorschau) document.vorschau.src="images/navigation/vorschau_a.gif";
+if (document.s_vorschau) document.s_vorschau.src="images/navigation/symb_vorschau_a.gif";
+if (document.speichern) document.speichern.src="images/navigation/speichern_a.gif";
+if (document.s_speichern) document.s_speichern.src="images/navigation/symb_speichern_a.gif";
+if (document.admin) document.admin.src="images/navigation/admin_a.gif";
+if (document.s_admin) document.s_admin.src="images/navigation/symb_admin_a.gif";
+if (document.benutzer) document.benutzer.src="images/navigation/benutzer_a.gif";
+if (document.s_benutzer) document.s_benutzer.src="images/navigation/symb_benutzer_a.gif";
+if (document.verwalten) document.verwalten.src="images/navigation/verwalten_a.gif";
+if (document.s_verwalten) document.s_verwalten.src="images/navigation/symb_verwalten_a.gif";
+}
+
+function hilfe_over()
+{
+document.hilfe.src="images/navigation/hilfe_b.gif";
+document.s_hilfe.src="images/navigation/symb_hilfe_b.gif";
+document.text_dummy.src="images/navigation/text_hilfe.gif"
+}
+
+function hilfe_out()
+{
+document.hilfe.src="images/navigation/hilfe_a.gif";
+document.s_hilfe.src="images/navigation/symb_hilfe_a.gif";
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+
+
+function optionen_click()
+{
+auswahl=10;
+document.kopfimage.src="images/kopf_optionen.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.optionen.src="images/navigation/optionen_b.gif";
+document.s_optionen.src="images/navigation/symb_optionen_b.gif";
+}
+
+function optionen_over()
+{
+document.optionen.src="images/navigation/optionen_b.gif";
+document.s_optionen.src="images/navigation/symb_optionen_b.gif";
+document.text_dummy.src="images/navigation/text_optionen.gif"
+}
+
+function optionen_out()
+{
+if (auswahl!=10)
+{
+document.optionen.src="images/navigation/optionen_a.gif";
+document.s_optionen.src="images/navigation/symb_optionen_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+
+
+function module_click()
+{
+auswahl=9;
+document.kopfimage.src="images/kopf_module.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.module.src="images/navigation/module_b.gif";
+document.s_module.src="images/navigation/symb_module_b.gif";
+}
+
+function module_over()
+{
+document.module.src="images/navigation/module_b.gif";
+document.s_module.src="images/navigation/symb_module_b.gif";
+document.text_dummy.src="images/navigation/text_module.gif"
+}
+
+function module_out()
+{
+if (auswahl!=9)
+{
+document.module.src="images/navigation/module_a.gif";
+document.s_module.src="images/navigation/symb_module_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function editieren_click()
+{
+auswahl=8;
+document.kopfimage.src="images/kopf_editieren.gif";
+document.geteilter_bogen.src="images/bogen_w_doppelt.gif";
+mache_grau();
+document.editieren.src="images/navigation/editieren_b.gif";
+document.s_editieren.src="images/navigation/symb_editieren_b.gif";
+}
+
+function editieren_over()
+{
+document.editieren.src="images/navigation/editieren_b.gif";
+document.s_editieren.src="images/navigation/symb_editieren_b.gif";
+document.text_dummy.src="images/navigation/text_editieren.gif"
+}
+
+function editieren_out()
+{
+if (auswahl!=8)
+{
+document.editieren.src="images/navigation/editieren_a.gif";
+document.s_editieren.src="images/navigation/symb_editieren_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function medien_click()
+{
+auswahl=7;
+document.kopfimage.src="images/kopf_medien.gif";
+document.geteilter_bogen.src="images/bogen_w_doppelt.gif";
+mache_grau();
+document.medien.src="images/navigation/medien_b.gif";
+document.s_medien.src="images/navigation/symb_medien_b.gif";
+}
+
+function medien_over()
+{
+document.medien.src="images/navigation/medien_b.gif";
+document.s_medien.src="images/navigation/symb_medien_b.gif";
+document.text_dummy.src="images/navigation/text_medien.gif"
+}
+
+function medien_out()
+{
+if (auswahl!=7)
+{
+document.medien.src="images/navigation/medien_a.gif";
+document.s_medien.src="images/navigation/symb_medien_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function vorschau_click()
+{
+auswahl=6;
+document.kopfimage.src="images/kopf_vorschau.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.vorschau.src="images/navigation/vorschau_b.gif";
+document.s_vorschau.src="images/navigation/symb_vorschau_b.gif";
+}
+
+function vorschau_over()
+{
+document.vorschau.src="images/navigation/vorschau_b.gif";
+document.s_vorschau.src="images/navigation/symb_vorschau_b.gif";
+document.text_dummy.src="images/navigation/text_vorschau.gif"
+}
+
+function vorschau_out()
+{
+if (auswahl!=6)
+{
+document.vorschau.src="images/navigation/vorschau_a.gif";
+document.s_vorschau.src="images/navigation/symb_vorschau_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function speichern_click()
+{
+auswahl=5;
+document.kopfimage.src="images/kopf_speichern.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.speichern.src="images/navigation/speichern_b.gif";
+document.s_speichern.src="images/navigation/symb_speichern_b.gif";
+}
+
+function speichern_over()
+{
+document.speichern.src="images/navigation/speichern_b.gif";
+document.s_speichern.src="images/navigation/symb_speichern_b.gif";
+document.text_dummy.src="images/navigation/text_speichern.gif"
+}
+
+function speichern_out()
+{
+if (auswahl!=5)
+{
+document.speichern.src="images/navigation/speichern_a.gif";
+document.s_speichern.src="images/navigation/symb_speichern_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function admin_click()
+{
+auswahl=4;
+document.kopfimage.src="images/kopf_admin.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.admin.src="images/navigation/admin_b.gif";
+document.s_admin.src="images/navigation/symb_admin_b.gif";
+}
+
+function admin_over()
+{
+document.admin.src="images/navigation/admin_b.gif";
+document.s_admin.src="images/navigation/symb_admin_b.gif";
+document.text_dummy.src="images/navigation/text_administrator.gif"
+}
+
+function admin_out()
+{
+if (auswahl!=4)
+{
+document.admin.src="images/navigation/admin_a.gif";
+document.s_admin.src="images/navigation/symb_admin_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function benutzer_click()
+{
+auswahl=3;
+document.kopfimage.src="images/kopf_benutzer.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.benutzer.src="images/navigation/benutzer_b.gif";
+document.s_benutzer.src="images/navigation/symb_benutzer_b.gif";
+}
+
+function benutzer_over()
+{
+document.benutzer.src="images/navigation/benutzer_b.gif";
+document.s_benutzer.src="images/navigation/symb_benutzer_b.gif";
+document.text_dummy.src="images/navigation/text_benutzer.gif"
+}
+
+function benutzer_out()
+{
+if (auswahl!=3)
+{
+document.benutzer.src="images/navigation/benutzer_a.gif";
+document.s_benutzer.src="images/navigation/symb_benutzer_a.gif";
+};
+document.text_dummy.src="images/navigation/text_dummy.gif"
+}
+
+function verwalten_click()
+{
+auswahl=2;
+document.kopfimage.src="images/kopf_verwalten.gif";
+document.geteilter_bogen.src="images/bogen_w_ganz.gif";
+mache_grau();
+document.verwalten.src="images/navigation/verwalten_b.gif";
+document.s_verwalten.src="images/navigation/symb_verwalten_b.gif";
+}
+
+function verwalten_over()
+{
+document.verwalten.src="images/navigation/verwalten_b.gif";
+document.s_verwalten.src="images/navigation/symb_verwalten_b.gif";
+document.text_dummy.src="images/navigation/text_verwalten.gif"
+}
+
+function verwalten_out()
+{
+if (auswahl!=2) 
+	{
+	document.verwalten.src="images/navigation/verwalten_a.gif";
+	document.s_verwalten.src="images/navigation/symb_verwalten_a.gif";
+	};
+document.text_dummy.src="images/navigation/text_dummy.gif";
+}
+
+
+
+
+</script>
+<map name="Map">
+  <area shape="rect" coords="618,0,768,34" href="{lnk_main}" onfocus="if(this.blur)this.blur()" target="_top">
+</map>
+</body>
+</html>
